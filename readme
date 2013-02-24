@@ -1,0 +1,13 @@
+This is the Mapnik stylesheet for OSM TW multilingual map.
+
+
+
+zh.style:
+	osm2pgsql's style sheet
+
+
+osm_zh.xml:
+	Traditional Chinese
+
+osm_bnn.xml:
+	Bunun
