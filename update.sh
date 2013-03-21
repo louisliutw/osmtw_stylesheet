@@ -1,6 +1,7 @@
 #!/bin/bash
 DATABASE=gis
-curl -s http://download.geofabrik.de/openstreetmap/asia/taiwan.osm.bz2 | bzip2 -d > taiwan.osm
+URL=http://download.geofabrik.de/asia/taiwan-latest.osm.bz2
+curl -s $URL | bzip2 -d > taiwan.osm
 osm2pgsql -m -S zh.style -d $DATABASE taiwan.osm
 
 psql -d $DATABASE << CMD
